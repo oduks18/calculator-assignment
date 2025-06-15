@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="script.js"></script>
+    <title>Simple Calculator</title>
+  </head>
+  <body>
+    <div class="calculator">
+      <!--display area-->
+      <input type="text" class="display" id="display" disabled />
+
+      <div class="buttons">
+        <button onclick="AddValues('1')">1</button>
+        <button onclick="AddValues('2')">2</button>
+        <button onclick="AddValues('3')">3</button>
+        <button onclick="AddValues('×')" class="mul-btn">×</button>
+
+        <button onclick="AddValues('4')">4</button>
+        <button onclick="AddValues('5')">5</button>
+        <button onclick="AddValues('6')">6</button>
+        <button onclick="AddValues('+')" class="plus-btn">+</button>
+
+        <button onclick="AddValues('7')">7</button>
+        <button onclick="AddValues('8')">8</button>
+        <button onclick="AddValues('9')">9</button>
+        <button onclick="AddValues('-')" class="minus-btn">-</button>
+
+        <button onclick="ClearDisplay()">C</button>
+        <button onclick="AddValues('0')" class="zero-btn">0</button>
+        <button onclick="AddValues('÷')" class="div-btn">÷</button>
+        <button onclick="CalculateResult()" class="equal-btn">=</button>
+      </div>
+    </div>
+  </body>
+</html>
